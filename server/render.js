@@ -78,7 +78,7 @@ function createServerData() {
         setTimeout(() => {
           done = true;
           promise = null;
-          resolve();
+          resolve(Math.random());
         }, API_DELAY);
       });
       throw promise;
